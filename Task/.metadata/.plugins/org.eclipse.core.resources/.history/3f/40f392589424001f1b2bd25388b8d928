@@ -1,0 +1,12 @@
+package runner;
+
+
+import io.cucumber.testng.CucumberOptions;
+
+public class Runner {
+
+	@CucumberOptions(
+			features = {"classpath:testcases/features"},
+			glue = {"testcases/stepdefinitions","Hooks"}
+	)
+}

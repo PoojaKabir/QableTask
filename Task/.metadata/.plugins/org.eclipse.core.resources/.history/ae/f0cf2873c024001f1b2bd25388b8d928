@@ -1,0 +1,28 @@
+package testcases.stepdefinitions;
+
+import io.cucumber.java.en.*;
+import pages.ProductPage;
+import utilities.Baseclass;
+
+public class Product extends Baseclass{
+
+//	ProductPage productpage;
+	ProductPage productpage = new ProductPage();
+	
+	@And("set price filter")
+	public void set_price_filter() {
+		productpage.setPriceFilter();
+	}
+	
+	@And("set brand filter")
+	public void set_brand_filter() {
+		productpage.setBrandFilter();
+	}
+	
+	@And("set ram filter")
+	public void set_ram_filter() {
+		productpage.setBrandFilter();
+	}
+	
+	
+}

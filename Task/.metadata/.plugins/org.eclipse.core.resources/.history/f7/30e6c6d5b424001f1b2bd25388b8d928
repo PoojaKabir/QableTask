@@ -1,0 +1,15 @@
+package testcases.stepdefinitions;
+
+import io.cucumber.java.en.Given;
+import pages.Homepage;
+import pages.ProductPage;
+import utilities.Baseclass;
+
+public class Product extends Baseclass{
+
+	ProductPage productpage;
+
+	productpage = new ProductPage();
+	}
+
+}

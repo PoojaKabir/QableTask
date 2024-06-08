@@ -1,0 +1,39 @@
+package testcases.stepdefinitions;
+
+import io.cucumber.java.en.*;
+import pages.ProductPage;
+import utilities.Baseclass;
+
+public class Product extends Baseclass{
+
+//	ProductPage productpage;
+	ProductPage productpage = new ProductPage();
+	
+	@And("set price filter")
+	public void set_price_filter() {
+		productpage.setPriceFilter();
+	}
+	
+	@And("set brand filter")
+	public void set_brand_filter() {
+		productpage.setBrandFilter();
+	}
+	
+	@And("set ram filter")
+	public void set_ram_filter() throws Exception {
+		productpage.selectFiltersForPhone();
+	}
+	@And("select filtered match product")
+	public void select_filtered_match_product() {
+		productpage.selctDevicewithMatchedFilter();
+	}
+	
+	@And("verify page is opened and click on add to cart button")
+	public void verify_page_and_click_on_addToCart() {
+		productpage.verifyProductPageOpened();
+	}
+	
+	
+	
+	
+}

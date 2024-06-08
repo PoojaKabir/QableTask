@@ -1,0 +1,16 @@
+package pages;
+
+import org.openqa.selenium.support.PageFactory;
+
+import utilities.Baseclass;
+
+public class Homepage extends Baseclass{
+
+	public Homepage() {
+		PageFactory.initElements(driver, this);
+	}
+	
+	
+	
+	
+}

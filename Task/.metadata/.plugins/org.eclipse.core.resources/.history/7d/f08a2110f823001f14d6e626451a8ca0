@@ -1,0 +1,12 @@
+package testcases.stepdefinition;
+
+import org.testng.annotations.BeforeClass;
+
+public class HomepageStepdefinition {
+
+	@BeforeClass
+	public void openUrl() {
+		
+	}
+	
+}

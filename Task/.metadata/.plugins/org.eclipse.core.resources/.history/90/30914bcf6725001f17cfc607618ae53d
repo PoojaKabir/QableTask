@@ -1,0 +1,14 @@
+
+@flipcart
+Feature: automate flipcart
+
+  @searchmobile
+  Scenario: search phone
+    Given I open URL
+    When verify homepage
+		When click on serchbar and search product
+			|Mobiles|
+		And set price filter
+		And set brand filter
+		And set ram filter
+		And select filtered match product

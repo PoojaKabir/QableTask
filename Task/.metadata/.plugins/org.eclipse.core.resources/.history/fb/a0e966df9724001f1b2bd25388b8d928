@@ -1,0 +1,17 @@
+package testcases.stepdefinitions;
+
+
+import io.cucumber.java.en.Given;
+import utilities.Baseclass;
+
+public class HomepageStepdefinition extends Baseclass{
+
+	@Given("I open URL")
+	public void openUrl() {
+		HomepageStepdefinition homepageStepdefinition = new HomepageStepdefinition();
+		new Baseclass().driverInitialize();
+	}
+	
+	
+	
+}

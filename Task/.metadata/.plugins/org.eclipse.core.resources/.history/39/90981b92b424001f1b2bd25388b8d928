@@ -1,0 +1,10 @@
+
+@flipcart
+Feature: automate flipcart
+
+  @searchmobile
+  Scenario: search phone
+    Given I open URL
+    When verify homepage
+		When click on serchbar and search product
+			|Mobiles|

@@ -1,0 +1,14 @@
+package utilities;
+
+import java.time.Duration;
+
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class CommonMethods {
+
+	
+	public void waitForVisiblityOfElement() {
+		WebDriverWait wait = new WebDriverWait(new Baseclass().driver, Duration.ofSeconds(30));
+	}
+	
+}
